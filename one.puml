@@ -1,0 +1,13 @@
+
+@startuml
+
+participant D2
+participant SSM
+participant IDCMT
+
+D2 -> SSM : Get
+SSM -> IDCMT : Forward Request
+IDCMT -> SSM : Response
+SSM -> D2 : Response
+
+@enduml
